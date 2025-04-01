@@ -1,0 +1,10 @@
+n=float(input("Enter your amount:"))
+m=100
+d=0.5
+while n<0:
+    print("Your amount is incorrect.")
+if n>m:
+    n=n*d
+    print(n)
+else:
+    print("Without discount")
