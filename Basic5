@@ -1,0 +1,19 @@
+n=int(input("Add your depozit:"))
+for i in range(0,100):
+    a=int(input("Press 1 if you want to depozit money or press 0 if you want to withdraw it:"))
+    if a==1:
+        b=int(input("Guess your depozit:"))
+        while b<0:
+            print("Your number is incorrect")
+        n=n+b
+    print("Your current depozit:",n)
+    if a==0:
+          while b>n:
+              print("Guess the correct number:")
+              b=int(input("Guess your withdraw:"))
+          while b<0:
+              print("Your number is incorrect")
+          n=n-b
+          print("Your current depozit:",n) 
+    else:
+          print("You pressed the wrong number")
