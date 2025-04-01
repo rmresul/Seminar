@@ -1,0 +1,10 @@
+import random
+n=random.randint(1,10)
+for i in range(0,3):
+    a=int(input("Guess the number:"))
+    if a<n:
+        print("The number is too low")
+    elif a>n:
+        print("The number is too high")
+    else:
+        print("Congratulations!. You guessed the number")
